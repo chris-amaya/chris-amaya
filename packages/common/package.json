@@ -1,0 +1,7 @@
+{
+  "name": "@my-app/common",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "author": "Christian Eduardo Amaya Rivas",
+  "license": "MIT"
+}

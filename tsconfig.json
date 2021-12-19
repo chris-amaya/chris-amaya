@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true
+  }
+}
