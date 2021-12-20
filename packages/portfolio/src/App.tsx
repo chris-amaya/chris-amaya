@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './sass/main.scss'
 
 import {
@@ -17,6 +17,24 @@ import Link from './assets/icons/Link'
 import {Button} from './components/Button/Button'
 
 function App() {
+  const [theme, setTheme] = useState<'light' | 'dark'>()
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.style.setProperty('--color-primary', '#01263a')
+      document.documentElement.style.setProperty('--color-light', '#1a3852')
+      document.documentElement.style.setProperty('--color-dark', '#000')
+      document.documentElement.style.setProperty('--color-text', '#fff')
+      document.documentElement.style.setProperty('--color-accent', '#ffffff')
+    } else if (theme === 'light') {
+      document.documentElement.style.setProperty('--color-primary', '#01263a')
+      document.documentElement.style.setProperty('--color-light', '#ffffff')
+      document.documentElement.style.setProperty('--color-dark', '#000')
+      document.documentElement.style.setProperty('--color-text', '#ffffff')
+      document.documentElement.style.setProperty('--color-accent', '#01263a')
+    }
+  }, [theme])
+
   return (
     <div className="App">
       <div className="hero">
@@ -36,7 +54,11 @@ function App() {
                 <Translate />
               </li>
               <li>
-                <Brightness />
+                <Brightness
+                  onClick={() => {
+                    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+                  }}
+                />
               </li>
             </ul>
           </header>
