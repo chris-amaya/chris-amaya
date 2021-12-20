@@ -1,0 +1,55 @@
+.hero {
+  background: linear-gradient(180deg, #1b3954 0%, #01263a 45.31%) no-repeat;
+  height: 60vh;
+  min-height: 500px;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+.hero-content {
+  display: flex;
+
+  .content > * {
+    margin-bottom: 24px;
+  }
+
+  .content > * {
+    display: flex;
+  }
+
+  p {
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .ionicon {
+    width: 24px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: left;
+
+    padding: 0;
+    list-style: none;
+  }
+
+  .social-media > * {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .hero-content {
+    justify-content: center;
+  }
+}

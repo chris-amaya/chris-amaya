@@ -1,0 +1,14 @@
+section {
+  // background-color: getColor('light');
+  color: getColor('accent');
+  text-align: justify;
+  font-size: 1rem;
+  h1 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+section:not(:last-child) {
+  margin-bottom: 5rem;
+}

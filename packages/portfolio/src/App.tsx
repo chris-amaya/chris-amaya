@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.scss'
+import './sass/main.scss'
 
 import {
   Brightness,
@@ -14,7 +14,7 @@ import {
 } from './assets'
 import Link from './assets/icons/Link'
 
-import {Button} from './components/Button'
+import {Button} from './components/Button/Button'
 
 function App() {
   return (
@@ -62,7 +62,7 @@ function App() {
           </div>
         </div>
       </div>
-      <section className="about-me">
+      <section>
         <div className="container">
           <div className="title">
             <h1>Sobre Mí</h1>
@@ -102,7 +102,7 @@ function App() {
         </div>
       </section>
 
-      <section className="projects">
+      <section>
         <div className="title">
           <h1>Proyectos</h1>
         </div>
@@ -127,15 +127,13 @@ function App() {
                       frontendmentor.io
                     </p>
                     <div className="card-buttons">
-                      <div>
-                        <Button text="Ver" />
-                        <Button>
-                          <Link color="#1a3852" />
-                        </Button>
-                        <Button>
-                          <Github color="#1a3852" />
-                        </Button>
-                      </div>
+                      <Button text="Ver" className="button" />
+                      <Button className="button">
+                        <Link />
+                      </Button>
+                      <Button className="button">
+                        <Github />
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -164,16 +162,13 @@ function App() {
                       frontendmentor.io
                     </p>
                     <div className="card-buttons">
-                      <div>
-                        <Button text="Ver" />
-                        <Button>
-                          <Link />
-                        </Button>
-                        <Button>
-                          <Github color="#fff" />
-                        </Button>
-                      </div>
-                      <div className="github"></div>
+                      <Button text="Ver" className="button" />
+                      <Button className="button">
+                        <Link />
+                      </Button>
+                      <Button className="button">
+                        <Github />
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -202,15 +197,13 @@ function App() {
                       frontendmentor.io
                     </p>
                     <div className="card-buttons">
-                      <div>
-                        <Button text="Ver" />
-                        <Button>
-                          <Link color="#1a3852" />
-                        </Button>
-                        <Button>
-                          <Github color="#1a3852" />
-                        </Button>
-                      </div>
+                      <Button text="Ver" className="button" />
+                      <Button className="button">
+                        <Link />
+                      </Button>
+                      <Button className="button">
+                        <Github />
+                      </Button>
                     </div>
                   </div>
                 </div>

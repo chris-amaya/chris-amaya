@@ -1,0 +1,26 @@
+// @import '../utils/variables';
+
+.button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  min-height: 30px;
+  p {
+    margin: 0;
+    padding: 0;
+    color: #01263a;
+  }
+
+  path {
+    fill: getColor('primary');
+  }
+}

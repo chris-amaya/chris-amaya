@@ -1,0 +1,93 @@
+.card .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-content {
+  display: flex;
+  font-family: 'RaleWay', sans-serif;
+
+  .card-text {
+    width: 60%;
+  }
+  .card-img {
+    width: 40%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-buttons {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.card:nth-child(odd) {
+  background-color: getColor('primary');
+  color: getColor('text');
+}
+
+// TODO: try to improve this
+// maybe use a mixin or something related to inheritance
+.card:nth-child(even) {
+  background-color: getColor('light');
+  color: getColor('accent');
+  .button {
+    background-color: getColor('primary');
+    p,
+    path {
+      color: #fff;
+      fill: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    .card-text {
+      width: 100%;
+    }
+
+    .card-img {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .card-buttons {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+    .card-text {
+      width: 100%;
+
+      .card-buttons {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .card {
+    .card-buttons {
+      flex-direction: column;
+    }
+
+    .card-buttons > div {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}

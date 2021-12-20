@@ -1,0 +1,16 @@
+$colors-dark: (
+  primary: #01263a,
+  light: #1a3852,
+  dark: #000,
+  text: #fff,
+  accent: #ffffff,
+);
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $name, $color in $colors-dark {
+      --color-#{$name}: #{$color};
+    }
+    --theme: 'dark';
+  }
+}
