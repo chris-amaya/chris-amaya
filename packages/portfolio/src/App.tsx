@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import './sass/main.scss'
 
 import {
-  Brightness,
   Codepen,
   Github,
   LinkedIn,
@@ -14,26 +13,13 @@ import {
 } from './assets'
 import Link from './assets/icons/Link'
 
+import {FaSun, FaMoon} from 'react-icons/fa'
+
 import {Button} from './components/Button/Button'
+import useTheme from './hooks/useTheme'
 
 function App() {
-  const [theme, setTheme] = useState<'light' | 'dark'>()
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.style.setProperty('--color-primary', '#01263a')
-      document.documentElement.style.setProperty('--color-light', '#1a3852')
-      document.documentElement.style.setProperty('--color-dark', '#000')
-      document.documentElement.style.setProperty('--color-text', '#fff')
-      document.documentElement.style.setProperty('--color-accent', '#ffffff')
-    } else if (theme === 'light') {
-      document.documentElement.style.setProperty('--color-primary', '#01263a')
-      document.documentElement.style.setProperty('--color-light', '#ffffff')
-      document.documentElement.style.setProperty('--color-dark', '#000')
-      document.documentElement.style.setProperty('--color-text', '#ffffff')
-      document.documentElement.style.setProperty('--color-accent', '#01263a')
-    }
-  }, [theme])
+  const {handleTheme, isActive} = useTheme()
 
   return (
     <div className="App">
@@ -54,11 +40,17 @@ function App() {
                 <Translate />
               </li>
               <li>
-                <Brightness
-                  onClick={() => {
-                    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
-                  }}
-                />
+                <button
+                  className={`switch ${isActive ? 'active' : ''}`}
+                  id="switch"
+                  onClick={handleTheme}>
+                  <span>
+                    <FaSun />
+                  </span>
+                  <span>
+                    <FaMoon />
+                  </span>
+                </button>
               </li>
             </ul>
           </header>
