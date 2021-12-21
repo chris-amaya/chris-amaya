@@ -19,6 +19,34 @@ header {
       display: flex;
       align-items: center;
     }
+
+    .languages-container {
+      &:hover {
+        .languages-selector {
+          display: flex;
+        }
+      }
+      display: flex;
+      align-items: center;
+      position: relative;
+      .languages-selector {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background: getColor('primary');
+        position: absolute;
+        top: 24px;
+        li {
+          width: 100%;
+          padding: 10px;
+          color: getColor('text');
+          &:hover {
+            background: getColor('light');
+            color: getColor('accent');
+          }
+        }
+      }
+    }
   }
 }
 
@@ -36,23 +64,5 @@ header {
       width: 20px;
       height: 20px;
     }
-    // svg {
-    //   width: 18px;
-    //   height: 18px;
-    // }
   }
 }
-// @media only screen and(max-width: 480px) {
-//   header {
-//     padding: 0;
-//     margin-top: 5px;
-//     ul {
-//       flex-direction: column;
-//       align-items: center;
-
-//       li {
-//         margin: 0.1rem 0;
-//       }
-//     }
-//   }
-// }

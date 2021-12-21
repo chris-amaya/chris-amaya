@@ -37,7 +37,13 @@ function App() {
                 <a href="#">Blog</a>
               </li>
               <li>
-                <Translate />
+                <div className="languages-container">
+                  <Translate />
+                  <ul className="languages-selector">
+                    <li>Spanish</li>
+                    <li>English</li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <button
