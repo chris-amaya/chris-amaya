@@ -22,8 +22,6 @@ export default function useTheme() {
   const [isActive, setIsActive] = useState(false)
 
   function handleTheme() {
-    console.log('asdfasfd')
-
     if (theme === 'light') {
       setTheme('dark')
       setIsActive(false)

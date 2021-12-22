@@ -46,6 +46,10 @@
   .social-media > * {
     margin-right: 20px;
   }
+
+  .call-to-action p {
+    color: getColor('primary');
+  }
 }
 
 @media only screen and(max-width: 768px) {
