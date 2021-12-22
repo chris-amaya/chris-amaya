@@ -2,7 +2,7 @@ import React from 'react'
 interface Props {
   color?: string
 }
-function Link({color}: Props) {
+export function Link({color}: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

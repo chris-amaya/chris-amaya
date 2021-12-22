@@ -1,0 +1,23 @@
+{
+  "header": {
+    "about": "About Me",
+    "projects": "Projects"
+  },
+  "hero": {
+    "title": {
+      "name": "Hi, I'm",
+      "name_value": "Christian Amaya",
+      "subtitle": "I'm a Web Developer"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I'm a web developer with 2 years of experience. I have a degree in information and communication technology from the univerity of Universidad Interámericana para el Desarrollo (UNID) in Mexico.\n\ni'm autodidact and im constantly improving my knowledge and learning the latest in technology. Currently i'm improving my skills in React, Jest, Docker with WSL and i'm looking forward in the future to complete a master degree. \n\nSince i've been preparing, I can say i've done more than 30 small projects and at least 2 big ones.\n\nMy Skills are defined as follows:\n<strong>Fluent:</strong> HTML, CSS, JavaScript, Typescript, Vue, Node.\n<strong>Proficient</strong> React, Angular, Linux, Docker, MongoDB, MySQL,TDD/Jest, Git, Socket.io\n<strong>Prior Experience:</strong> Zoho, Genexus, D3.js, React Native.\n\nMy Level of English is currently not certified but i considered as myself as B2, I finished a TOEIC exam on 07/2021 sadly I still dont have the results yet, gladly, i have an <cert>online certification</cert> given by <efset>EFSET</efset>."
+  },
+  "projects": {
+    "title": "Projects",
+    "rock-paper": "A simple game that allows you to play Rock Paper Scissors. You can play with the computer or with another player. You can also play the variant of Rock Paper Scissors Lizard Spock.",
+    "comport": "Camport is a personal project in which i will try to boost the alternatives of mexican farmer producers, so they do not depend of local buyers. \n\nI just finished the project because of this, still there are not real users.",
+    "math-fights": "An app that allows you to play a math game againt the computer or another player. this app is still in development so i'm adding more features and fixing bugs."
+  }
+}

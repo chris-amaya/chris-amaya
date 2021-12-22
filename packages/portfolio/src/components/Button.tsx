@@ -1,5 +1,5 @@
 import React, {CSSProperties} from 'react'
-import styles from '../../sass/modules/Button.module.scss'
+import styles from '../sass/modules/Button.module.scss'
 
 interface Props {
   text?: string
