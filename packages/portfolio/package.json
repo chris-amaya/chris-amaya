@@ -4,24 +4,27 @@
   "private": true,
   "dependencies": {
     "@my-app/common": "*",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.17",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
     "i18next": "^21.6.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.15.1",
     "react-icons": "^4.3.1",
     "react-markdown": "^7.1.1",
-    "react-router-dom": "6",
-    "react-scripts": "4.0.3",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
     "sass": "^1.45.0",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "typed-react-markdown": "^0.1.0",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,8 +49,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "typescript-plugin-css-modules": "^3.4.0"
   }
 }

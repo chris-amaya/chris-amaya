@@ -13,6 +13,7 @@ a,
 div {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  color: inherit;
 }
 
 p {
@@ -24,6 +25,13 @@ a {
   color: #fff;
 }
 
+svg {
+  path {
+    fill: getColor('accent');
+  }
+  fill: getColor('accent');
+}
+
 body {
   background-color: getColor('light');
   font-size: 62.5%;
@@ -31,16 +39,9 @@ body {
   transition: all 0.5s ease;
 }
 
-ul li {
-  list-style: none;
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-}
-
 .container {
   margin: 0 auto;
   max-width: 960px;
   width: 90%;
+  position: relative;
 }

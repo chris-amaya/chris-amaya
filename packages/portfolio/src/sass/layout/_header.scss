@@ -1,8 +1,7 @@
 header {
-  width: 60%;
-  margin: 0 0 0 auto;
+  // width: 60%;
+  // margin: 0 0 0 auto;
   padding: 1rem;
-  position: absolute;
   top: 0;
   right: 0;
 
@@ -47,6 +46,20 @@ header {
         }
       }
     }
+  }
+}
+
+.hero header {
+  svg {
+    fill: #fff;
+    path {
+      fill: #fff;
+    }
+    color: #fff;
+  }
+
+  ul li a {
+    color: #fff;
   }
 }
 

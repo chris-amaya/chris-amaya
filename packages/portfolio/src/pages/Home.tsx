@@ -6,13 +6,15 @@ export function Home() {
     <>
       <div className="hero">
         <div className="container">
-          <Header />
-          <Hero />
+          <div>
+            <Header />
+            <Hero />
+          </div>
         </div>
-      </div>
 
-      <About />
-      <Projects />
+        <About />
+        <Projects />
+      </div>
     </>
   )
 }

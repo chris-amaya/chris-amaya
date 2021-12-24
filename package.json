@@ -8,7 +8,8 @@
   "workspaces": {
     "packages": [
       "packages/*"
-    ]
+    ],
+    "nohoist": ["**/react-scripts/**", "**/react-scripts", "react-scripts/**", "**/react/**", "**/react", "react/**", "**/react-dom/**", "**/react-dom", "react-dom/**"]
   },
   "scripts": {
     "backend:start": "yarn workspace @personal/backend start",
@@ -16,12 +17,21 @@
     "backend:build": "yarn workspace @personal/backend build",
     "backend:test": "yarn workspace @personal/backend test",
     "portfolio:start": "yarn workspace @personal/portfolio start",
+    "frontend:start": "yarn workspace @personal/frontend start",
     "reset": "npx rimraf ./**/node_modules yarn.lock",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx)\" --write"
   },
+  "resolutions": {
+    "@types/jest": "^27.0.3"
+  },
   "devDependencies": {
     "prettier": "^2.5.0",
-    "typescript": "^4.5.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0"
   }
 }
