@@ -11,12 +11,13 @@ services:
       - app-network
     logging:
       driver: none
+
   backend:
     restart: unless-stopped
     build:
       context: ./
       dockerfile: Dockerfile
-      target: BASE
+      target: backend
     ports:
       - 8000:8000
     volumes:
@@ -34,7 +35,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      target: BASE
+      target: portfolio
     ports:
       - 3000:3000
     volumes:
@@ -44,21 +45,6 @@ services:
     networks:
       - app-network
     command: yarn portfolio:start
-
-  frontend:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-      target: BASE
-    ports:
-      - 3000:3000
-    volumes:
-      - .:/usr/src/app
-      - /usr/src/app/packages/frontend/node_modules
-      - /usr/src/app/node_modules
-    networks:
-      - app-network
-    command: yarn frontend:start
 
 networks:
   app-network:
