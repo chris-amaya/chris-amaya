@@ -10,8 +10,8 @@ export interface IProject {
   name: string
   lang: language
   caseStudy: boolean
-  link: string
-  github: string
+  link?: string
+  github?: string
   images: {
     home: string
     hero: string
