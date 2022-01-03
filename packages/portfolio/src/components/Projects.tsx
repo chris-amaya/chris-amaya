@@ -1,12 +1,17 @@
 import React from 'react'
 import {useTranslation} from 'react-i18next'
+import {useNavigate} from 'react-router-dom'
 
 import {Button} from '.'
-import {Github, images, Link as LinkIcon} from '../assets'
+import {Github, Link as LinkIcon} from '../assets'
 
 export function Projects() {
   const {t} = useTranslation()
+  const navigate = useNavigate()
 
+  function handleNavigateProject(project: 'rock' | 'math' | 'camport') {
+    navigate(`/projects/${project}`)
+  }
   return (
     <section id="projects">
       <div className="title">
@@ -24,7 +29,11 @@ export function Projects() {
                 <div className="card-info">
                   <p>{t('projects.rock-paper')}</p>
                   <div className="card-buttons">
-                    <Button text="Ver" className="button" />
+                    <Button
+                      className="button"
+                      onClick={() => handleNavigateProject('rock')}>
+                      <p>Ver</p>
+                    </Button>
                     <Button className="button">
                       <LinkIcon />
                     </Button>
@@ -35,7 +44,7 @@ export function Projects() {
                 </div>
               </div>
               <figure className="card-img">
-                <img src={images.rock_paper_scissors} alt="" />
+                <img src="/img/rock-paper-scissors.jpg" alt="" />
               </figure>
             </div>
           </div>
@@ -61,7 +70,7 @@ export function Projects() {
                 </div>
               </div>
               <figure className="card-img">
-                <img src={images.camport} alt="" />
+                <img src="/img/camport.png" alt="" />
               </figure>
             </div>
           </div>
@@ -87,7 +96,7 @@ export function Projects() {
                 </div>
               </div>
               <figure className="card-img">
-                <img src={images.mathFights} alt="" />
+                <img src="/img/math-fights.png" alt="" />
               </figure>
             </div>
           </div>

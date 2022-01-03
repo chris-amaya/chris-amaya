@@ -1,6 +1,6 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
-import Article from './components/Article'
+import {Routes, Route, useMatch} from 'react-router-dom'
+import Article from './pages/Article'
 import Home from './pages/Home'
 
 export function AppRouter() {
@@ -8,7 +8,9 @@ export function AppRouter() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/article" element={<Article />} />
+        <Route path="project">
+          <Route path=":id" element={<Article />}></Route>
+        </Route>
       </Routes>
     </div>
   )

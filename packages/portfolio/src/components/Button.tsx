@@ -5,6 +5,7 @@ interface Props {
   text?: string
   className?: string
   styles?: CSSProperties
+  onClick?: () => void
 }
 
 export const Button: React.FC<Props> = ({
@@ -12,9 +13,13 @@ export const Button: React.FC<Props> = ({
   text,
   children,
   styles: _styles,
+  onClick,
 }) => {
   return (
-    <div className={`${styles.button} ${className}`} style={_styles}>
+    <div
+      className={`${styles.button} ${className}`}
+      style={_styles}
+      onClick={onClick}>
       {children ? children : <p>{text}</p>}
     </div>
   )
