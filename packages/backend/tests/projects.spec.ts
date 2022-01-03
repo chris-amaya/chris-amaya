@@ -18,40 +18,59 @@ describe('Tests on Projects', () => {
   /**
    * Clear all test data after every test.
    */
-  afterEach(async () => await mongod.clearDatabase())
+  // afterEach(async () => await mongod.clearDatabase())
 
   /**
    * Remove and close the db and server.
    */
   afterAll(async () => await mongod.closeDatabase())
 
-  test('should create a project', async () => {
-    const project: IProject = {
-      name: 'Test Project',
-      caseStudy: true,
-      github: 'test',
-      images: {
-        hero: 'test',
-        home: 'test',
+  const project1: IProject = {
+    name: 'Test Project',
+    caseStudy: true,
+    github: 'test',
+    images: {
+      hero: 'test',
+      home: 'test',
+    },
+    lang: {
+      en: {
+        name: 'Test Project',
+        summary: 'Test Project',
+        text: 'Test Project',
       },
-      lang: {
-        en: {
-          name: 'Test Project',
-          summary: 'Test Project',
-          text: 'Test Project',
-        },
-        es: {
-          name: 'Test Project 2',
-          summary: 'Test Project 2',
-          text: 'Test Project 2',
-        },
+      es: {
+        name: 'Test Project 2',
+        summary: 'Test Project 2',
+        text: 'Test Project 2',
       },
-      link: 'test',
-    }
+    },
+    link: 'test',
+  }
 
-    const response = await projectUseCases.createProject(project)
+  test('should create a project', async () => {
+    const response = await projectUseCases.createProject(project1)
 
     expect(response).toBeDefined()
-    expect(response).toMatchObject(project)
+    expect(response).toMatchObject(project1)
+  })
+
+  test('should return 1 item', async () => {
+    const projects = await projectUseCases.getProjects()
+
+    expect(projects.length).toBe(1)
+    expect(projects[0]).toMatchObject(project1)
+  })
+
+  test('should get only 1 project by its name', async () => {
+    const newProjectName = 'new test'
+    await projectUseCases.createProject(Object.assign(project1, { name: newProjectName,
+    }))
+
+    const project = await projectUseCases.getProject(project1.name)
+    expect(project.name).toBe(project1.name)
+
+    const project2 = await projectUseCases.getProject(newProjectName)
+    expect(project2.name).toBe(newProjectName)
   })
 })
