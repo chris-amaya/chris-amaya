@@ -21,7 +21,7 @@ export default class App {
   middlewares() {
     this.app.use(cors())
     this.app.use(express.json())
-    this.app.use('/', projectRoutes)
+    this.app.use(projectRoutes)
   }
 
   async connect() {
