@@ -1,6 +1,7 @@
 import React from 'react'
 import {useTranslation} from 'react-i18next'
 import {FaSun, FaMoon} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 
 import {Translate} from '../assets'
 import useTheme from '../hooks/useTheme'
@@ -16,13 +17,10 @@ export function Header() {
     <header>
       <ul>
         <li>
-          <a href="#about">{t('header.about')}</a>
+          <Link to="/">{t('header.home')}</Link>
         </li>
         <li>
-          <a href="#projects">{t('header.projects')}</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
           <div className="languages-container">
