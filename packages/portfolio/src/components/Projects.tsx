@@ -30,36 +30,36 @@ export function Projects() {
       <div className="cards">
         {state &&
           state.map((project) => (
-            <div className="card">
+            <div className="card" key={project?._id}>
               <div className="container">
                 <div className="card-content">
                   <div className="card-text">
+                    {/* <div className="card-info"> */}
                     <div className="title">
                       <h2>{project.lang[i18n.language].name}</h2>
-                    </div>
-                    <div className="card-info">
                       <p>{project.lang[i18n.language].summary}</p>
-                      <div className="card-buttons">
-                        {project.caseStudy && (
-                          <Button
-                            className="button"
-                            onClick={() => handleNavigateProject(project.name)}>
-                            <p>{t('projects.useCase')}</p>
-                          </Button>
-                        )}
+                    </div>
+                    <div className="card-buttons">
+                      {project.caseStudy && (
+                        <Button
+                          className="button"
+                          onClick={() => handleNavigateProject(project.name)}>
+                          <p>{t('projects.useCase')}</p>
+                        </Button>
+                      )}
 
-                        {project.link && (
-                          <Button className="button">
-                            <LinkIcon />
-                          </Button>
-                        )}
+                      {project.link && (
+                        <Button className="button">
+                          <LinkIcon />
+                        </Button>
+                      )}
 
-                        {project.github && (
-                          <Button className="button">
-                            <Github />
-                          </Button>
-                        )}
-                      </div>
+                      {project.github && (
+                        <Button className="button">
+                          <Github />
+                        </Button>
+                      )}
+                      {/* </div> */}
                     </div>
                   </div>
                   <figure className="card-img">

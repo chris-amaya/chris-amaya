@@ -45,16 +45,16 @@
 }
 
 @media only screen and(max-width: 480px) {
-  .switch::after {
+  .switch-control::after {
     width: 20px;
     height: 20px;
   }
 
-  .switch.active::after {
+  .switch-control.active::after {
     left: calc(100% - 20px);
   }
 
-  .switch span {
+  .switch-control span {
     width: 18px;
     height: 18px;
 

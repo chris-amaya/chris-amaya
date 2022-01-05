@@ -50,5 +50,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babakness/sass-module-types": "^0.0.31",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }

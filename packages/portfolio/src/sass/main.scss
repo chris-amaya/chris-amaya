@@ -8,11 +8,6 @@
 // base
 @import './base/reset';
 
-// components | modules
-@import './modules/Button.module.scss';
-@import './modules/card.module.scss';
-@import './modules/switch.module.scss';
-
 // layout
 @import './layout/hero.scss';
 @import './layout/section.scss';
@@ -20,4 +15,4 @@
 
 // pages
 @import './pages/home.scss';
-@import './pages/Article.scss';
+@import './pages/article.scss';

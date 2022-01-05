@@ -1,9 +1,9 @@
 import React from 'react'
-import {Header, Hero, About, Projects} from '../components'
+import {Header, Hero, About, Projects} from '../../components'
 
 export function Home() {
   return (
-    <>
+    <div className="Home">
       <div className="hero">
         <div className="container">
           <div>
@@ -15,7 +15,7 @@ export function Home() {
         <About />
         <Projects />
       </div>
-    </>
+    </div>
   )
 }
 

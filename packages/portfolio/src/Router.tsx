@@ -1,7 +1,7 @@
 import React from 'react'
-import {Routes, Route, useMatch} from 'react-router-dom'
-import Article from './pages/Article'
-import Home from './pages/Home'
+import {Routes, Route} from 'react-router-dom'
+import Article from './pages/Article/Article'
+import Home from './pages/Home/Home'
 
 export function AppRouter() {
   return (

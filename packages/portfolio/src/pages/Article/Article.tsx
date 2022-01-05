@@ -4,7 +4,7 @@ import remarkGfm from 'remark-gfm'
 import {useParams} from 'react-router-dom'
 
 import {IProject} from '@personal/common'
-import {Header} from '../components'
+import {Header} from '../../components'
 import {useTranslation} from 'react-i18next'
 
 function Article() {
@@ -19,7 +19,7 @@ function Article() {
   }, [])
 
   return (
-    <>
+    <div className="Article">
       <div className="container">
         <Header />
       </div>
@@ -34,7 +34,7 @@ function Article() {
           />
         </div>
       </section>
-    </>
+    </div>
   )
 }
 

@@ -16,4 +16,5 @@ export interface IProject {
     home: string
     hero: string
   }
+  _id?: string
 }
