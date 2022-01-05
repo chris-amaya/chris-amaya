@@ -3,3 +3,4 @@
  */
 export * from './Project'
 export * from './requests'
+export * from './Post'

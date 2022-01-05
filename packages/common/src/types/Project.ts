@@ -1,4 +1,4 @@
-interface language {
+export interface language {
   [key: string]: {
     name: string
     summary: string
