@@ -1,14 +1,14 @@
 import React from 'react'
-import {Header} from '../components'
-import Tags from '../components/Tags'
-
+import {Header, Tags} from '../components'
+import {Posts} from '../components'
 export default function Blog() {
   return (
     <div className="Blog">
       <div className="container">
         <Header />
+        <Tags />
+        <Posts />
       </div>
-      <Tags />
     </div>
   )
 }

@@ -34,7 +34,6 @@ export function Projects() {
               <div className="container">
                 <div className="card-content">
                   <div className="card-text">
-                    {/* <div className="card-info"> */}
                     <div className="title">
                       <h2>{project.lang[i18n.language].name}</h2>
                       <p>{project.lang[i18n.language].summary}</p>
@@ -59,7 +58,6 @@ export function Projects() {
                           <Github />
                         </Button>
                       )}
-                      {/* </div> */}
                     </div>
                   </div>
                   <figure className="card-img">
