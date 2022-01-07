@@ -22,17 +22,4 @@ declare module '*.module.scss' {
   export default classes
 }
 
-// declare module '*.module.scss' {
-//   const content: Record<string, string>
-//   export * from content
-// }
-
-// declare module '*.module.scss' {
-//   const styles2: {[classname: string]: string}
-//   export * from styles2
-// }
-
-// declare module '*.module.css' {
-//   const styles: { [className: string]: string }
-//   export * from styles
-// }
+declare module 'svg-loaders-react'

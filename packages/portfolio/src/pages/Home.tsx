@@ -1,5 +1,6 @@
 import React from 'react'
 import {Header, Hero, About, Projects} from '../components'
+import AnimatedPage from '../animations/AnimatedPage'
 
 export function Home() {
   return (
@@ -8,12 +9,16 @@ export function Home() {
         <div className="container">
           <div>
             <Header />
-            <Hero />
+            <AnimatedPage>
+              <Hero />
+            </AnimatedPage>
           </div>
         </div>
 
-        <About />
-        <Projects />
+        <AnimatedPage>
+          <About />
+          <Projects />
+        </AnimatedPage>
       </div>
     </div>
   )

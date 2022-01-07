@@ -5,6 +5,7 @@ import {useNavigate} from 'react-router-dom'
 
 import {Button} from '.'
 import {Github, Link as LinkIcon} from '../assets'
+import {useAppContext} from '../context/AppContext'
 
 export function Projects() {
   const {t, i18n} = useTranslation()
@@ -15,7 +16,10 @@ export function Projects() {
     navigate(`/project/${projectName}`)
   }
 
+  const {setLoading} = useAppContext()
+
   useEffect(() => {
+    setLoading(true)
     fetch(`http://localhost:8000/projects`)
       .then((res) => res.json())
       .then((data) => setState(data.projects as IProject[]))
@@ -61,7 +65,11 @@ export function Projects() {
                     </div>
                   </div>
                   <figure className="card-img">
-                    <img src={project.images.home} alt="" />
+                    <img
+                      src={project.images.home}
+                      onLoad={() => setLoading(false)}
+                      alt=""
+                    />
                   </figure>
                 </div>
               </div>

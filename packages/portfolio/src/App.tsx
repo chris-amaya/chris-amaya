@@ -3,11 +3,14 @@ import {BrowserRouter} from 'react-router-dom'
 import Router from './Router'
 import './i18n/config'
 import './sass/main.scss'
+import {AppState} from './context/AppContext'
 
 function App() {
   return (
     <BrowserRouter>
-      <Router></Router>
+      <AppState>
+        <Router></Router>
+      </AppState>
     </BrowserRouter>
   )
 }
