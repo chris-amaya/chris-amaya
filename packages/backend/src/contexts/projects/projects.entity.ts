@@ -1,1 +1,1 @@
-export {IProject} from '@personal/common'
+export {type IProject} from '@personal/common'

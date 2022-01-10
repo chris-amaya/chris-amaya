@@ -1,1 +1,1 @@
-export {IPost} from '@personal/common'
+export {type IPost} from '@personal/common'

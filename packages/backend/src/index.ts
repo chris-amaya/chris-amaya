@@ -1,7 +1,7 @@
-import * as dotenv from 'dotenv'
+import './env'
 import App from './App'
 
-dotenv.config()
+console.log(process.env.NODE_ENV, 'process.env.NODE_ENV')
 
 const app = new App(Number(process.env.PORT))
 app.start(() => {

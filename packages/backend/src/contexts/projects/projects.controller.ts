@@ -31,7 +31,7 @@ async function saveProjectController(req: Request, res: Response) {
     !data.images ||
     typeof data.images !== 'object' ||
     Object.keys(data.images).length === 0 ||
-    !Object.keys(data.images).every((key) => !!data.images[key])
+    !Object.keys(data.images).every((key) => !!(data.images as any)[key])
   ) {
     return res.json({ok: false, error: 'img not provided'})
   }

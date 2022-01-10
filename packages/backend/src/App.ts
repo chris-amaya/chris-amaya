@@ -26,9 +26,11 @@ export default class App {
 
   async connect() {
     console.log('Connecting to MongoDB...')
+    console.log(process.env.MONGO_DB_URL)
+    console.log(process.env.PORT)
 
     try {
-      await mongoose.connect(process.env.MONGO_DB_URL)
+      await mongoose.connect(process.env.MONGO_DB_URL as string)
       console.log('DB Connected')
     } catch (error) {
       console.log(error)

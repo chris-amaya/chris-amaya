@@ -6,12 +6,13 @@
     "lib": ["ES2019"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "es6",
+    "target": "ES6",
     "types": ["node", "jest"],
-    "outDir": "dist",
+    "outDir": "lib",
     "typeRoots": ["src/types"],
     "noEmit": true
   },
+  "include": ["src/**/*.ts"],
   "ts-node": {
     // It is faster to skip typechecking.
     // Remove if you want ts-node to do typechecking.

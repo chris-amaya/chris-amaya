@@ -41,7 +41,7 @@ async function savePostController(req: Request, res: Response) {
     return
   }
 
-  if (!tags || !tags.length || tags.every((tag) => !tag)) {
+  if (!tags || !tags.length || tags.every((tag: any) => !tag)) {
     res.json({
       ok: false,
       error: 'tags not provided',
