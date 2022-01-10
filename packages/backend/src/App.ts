@@ -28,7 +28,7 @@ export default class App {
     console.log('Connecting to MongoDB...')
 
     try {
-      await mongoose.connect('mongodb://127.0.0.1:27017')
+      await mongoose.connect(process.env.MONGO_DB_URL)
       console.log('DB Connected')
     } catch (error) {
       console.log(error)
