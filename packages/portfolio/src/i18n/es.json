@@ -12,7 +12,29 @@
   },
   "about": {
     "title": "Sobre Mi",
-    "text": "Soy desarrollador web con 2 años de experiencia. Graduado de la licenciatura en Tecnologías de la Información y la Comunicación en la Universidad Interámericana para el Desarrollo en México.\n\nSoy una persona autodidacta y busco constantemente afianzar mis conocimientos y aprender lo mas nuevo en tecnología. Actualmente me encuentro masterizando React, Jest y Docker con WSL y buscaré en el futuro hacer una maestría. \n\nA lo largo de mi preparación, he hecho mas de 30 pequeños proyectos y al menos 2 proyectos grandes.\n\nMis conocimientos o stack, los defino de la siguiente manera:\n<strong>Avanzado:</strong> HTML, CSS, JavaScript, Typescript, Vue, Node.\n<strong>Medio:</strong> React, Angular, Linux, Docker, MongoDB, MySQL,TDD/Jest, Git, Socket.io\n<strong>Prior Experience:</strong> Zoho, Genexus, D3.js, React Native.\n\nMi nivel de inglés considero que es B2, lamentablemente aún no recibo mis resultados del Examén TOEIC el cual lo realicé el 07/2021, aunque tengo un <cert>certificado online</cert> emitido departe de <efset>EFSET</efset>."
+    "p1": "Soy un desarrollador web con 2 años de experiencia profesional. Soy licenciado en tecnología de la información y las comunicaciones de la Universidad Interámericana para el Desarrollo (UNID) en México.",
+    "p2": {
+      "pre": "Desde que estudio, puedo decir que he hecho",
+      "list": {
+        "i1": "<0>Más de 30 pequeños proyectos personales</0>: proyectos para reforzar mis conocimientos mientras me formaba.",
+        "i2": "<0>1 proyecto personal</0>: comport es un proyecto que espero que algún día pronto sea consumado.",
+        "i3": "<0>Al menos 3 grandes proyectos profesionales</0>: mientras trabajaba en Quickapps ayudé a terminar 2 grandes proyectos y uno más lo dejé en espera."
+      }
+    },
+    "p3": "Soy autodidacta y constantemente estoy mejorando mis conocimientos y aprendiendo lo último en tecnología. Actualmente estoy mejorando mis habilidades en React, Jest, Docker con WSL y espero en el futuro completar una maestría.",
+    "p4": {
+      "pre": "Soy una persona que piensa que, para dedicar su vida a algo, debería haber experimentado otros campos, esa es la razón por la que no puedo definirme como desarrollador Back-End, Front-End, DevOps, pero creo que ahora que intentaré convertirme en un experto en Front Development, con todo lo dicho, puedo decir que mis habilidades se definen de la siguiente manera:",
+      "list": {
+        "i1": "<0>Avanzado</0>: HTML, CSS, SASS, JavaScript, Typecript, Vue, Node.",
+        "i2": "<0>Competente</0>: React, Angular, Linux, MongoDB, MySQL, TDD / Jest, Git, Socket.io.",
+        "i3": "<0>Experiencia previa</0>: Zoho, Genexus, D3.js, React Native."
+      }
+    },
+    "p5": {
+      "pre": "Mi nivel de inglés actualmente no está certificado, pero me considero B2, terminé un examen TOEIC el 07/2021, lamentablemente todavía no tengo los resultados, ",
+      "cert": "aunque tengo una <cert>certificación en línea</cert> ",
+      "efset": "otorgada por <efset>EFSET</efset>."
+    }
   },
   "projects": {
     "useCase": "Ver más",

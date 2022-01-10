@@ -4,6 +4,8 @@ $colors-dark: (
   dark: #000,
   text: #fff,
   accent: #ffffff,
+  headerTable: #01263a,
+  rowTable: #1b3954,
 );
 
 @media (prefers-color-scheme: dark) {

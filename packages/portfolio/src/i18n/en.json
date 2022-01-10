@@ -12,7 +12,29 @@
   },
   "about": {
     "title": "About Me",
-    "text": "I'm a web developer with 2 years of experience. I have a degree in information and communication technology from the univerity of Universidad Interámericana para el Desarrollo (UNID) in Mexico.\n\ni'm autodidact and im constantly improving my knowledge and learning the latest in technology. Currently i'm improving my skills in React, Jest, Docker with WSL and i'm looking forward in the future to complete a master degree. \n\nSince i've been preparing, I can say i've done more than 30 small projects and at least 2 big ones.\n\nMy Skills are defined as follows:\n<strong>Fluent:</strong> HTML, CSS, JavaScript, Typescript, Vue, Node.\n<strong>Proficient</strong> React, Angular, Linux, Docker, MongoDB, MySQL,TDD/Jest, Git, Socket.io\n<strong>Prior Experience:</strong> Zoho, Genexus, D3.js, React Native.\n\nMy Level of English is currently not certified but i considered as myself as B2, I finished a TOEIC exam on 07/2021 sadly I still dont have the results yet, gladly, i have an <cert>online certification</cert> given by <efset>EFSET</efset>."
+    "p1": "I'm a web developer with 2 years of professional experience. I have a degree in information and communication technology from the university of Universidad Interámericana para el Desarrollo (UNID) in Mexico",
+    "p2": {
+      "pre": "Since I’ve been studying, I can say I’ve done:",
+      "list": {
+        "i1": "<0>More than 30 small personal projects</0>: projects to enforce my knowledge while I was forming myself.",
+        "i2": "<0>1 personal project</0>: comport is a project that I hope some day soon will be consumed.",
+        "i3": "<0>At least 3 big professional projects</0>: while I was working at Quickapps I help finishing 2 big projects and one more left it on standby."
+      }
+    },
+    "p3": "I’m autodidact and I’m constantly improving my knowledge and learning the latest in technology. Currently I’m improving my skills in React, Jest, Docker with WSL and I’m looking forward in the future to complete a master’s degree. ",
+    "p4": {
+      "pre": "I’m a person who thinks that in order to dedicate your life to something, you should’ve had experienced other fields, that’s the reason I cannot define myself as a Back-End, Front-End, DevOps developer and the reason I have knowledge in different type of technologies. but I believe now that I will try to become an expert in Front Development, with that all being said I can say my skills are defined as follows: ",
+      "list": {
+        "i1": "<0>Fluent</0>: HTML, CSS, JavaScript, Typescript, Vue, Node.js",
+        "i2": "<0>Proficient</0>: React, Angular, Linux, Docker, MongoDB, MySQL, TDD/Jest, Git, Socket.io",
+        "i3": "<0>Prior Experience</0>: Zoho, Genexus, D3.js, React Native"
+      }
+    },
+    "p5": {
+      "pre": "My Level of English is currently not certified but I considered as myself as B2, I finished a TOEIC exam on 07/2021 sadly I still don’t have the results yet, gladly, ",
+      "cert": "i have an <cert>online certification</cert> ",
+      "efset": "given by <efset>EFSET</efset>."
+    }
   },
   "projects": {
     "useCase": "See more",
