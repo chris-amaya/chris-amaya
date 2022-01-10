@@ -16,15 +16,29 @@ export function Hero() {
           </p>
         </div>
         <div className="call-to-action">
-          <Button text="CV" />
+          <a href="/Christian_Amaya-Developer.pdf">
+            <Button text="CV" />
+          </a>
         </div>
         <div className="social-media">
-          <LinkedIn />
-          <Codepen />
-          <Github />
-          <Figma />
-          <Codewars />
-          <Email />
+          <a href="https://www.linkedin.com/in/christian-amaya/">
+            <LinkedIn />
+          </a>
+          <a href="https://codepen.io/shadow_2">
+            <Codepen />
+          </a>
+          <a href="https://github.com/chris-amaya/">
+            <Github />
+          </a>
+          <a href="https://www.figma.com/@chrisamaya">
+            <Figma />
+          </a>
+          <a href="https://www.codewars.com/users/chris-amaya">
+            <Codewars />
+          </a>
+          <a href="mailto:contact@chrisamaya.com.mx">
+            <Email />
+          </a>
         </div>
       </div>
     </div>

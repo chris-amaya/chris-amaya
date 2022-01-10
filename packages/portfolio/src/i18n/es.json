@@ -37,7 +37,7 @@
     }
   },
   "projects": {
-    "useCase": "Ver más",
+    "useCase": "Caso de uso",
     "title": "Proyectos",
     "rock-paper": "Un simple juego de piedra papel y tijeras. Puedes jugarlo contra la computadora o una persona. También se puede jugar la variante Piedra, Papel, Tijeras, Lagarto, Spock.",
     "comport": "Camport es un proyecto personal en el que busco mejorar las alternativas para los productores del campo en méxico, para que así no dependan de compradores locales. \n\nAcabo de terminar este proyecto por lo que aún no existen usuarios reales.",

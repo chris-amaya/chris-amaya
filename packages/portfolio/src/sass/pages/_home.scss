@@ -1,3 +1,9 @@
 .Home {
   @import '../modules/card.module.scss';
 }
+
+.about {
+  a {
+    text-decoration: underline;
+  }
+}

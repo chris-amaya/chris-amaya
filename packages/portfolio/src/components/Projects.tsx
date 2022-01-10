@@ -20,7 +20,7 @@ export function Projects() {
 
   useEffect(() => {
     setLoading(true)
-    fetch(`http://localhost:8000/projects`)
+    fetch(`${process.env.REACT_APP_SERVER_URL}/projects`)
       .then((res) => res.json())
       .then((data) => setState(data.projects as IProject[]))
   }, [])
@@ -53,13 +53,17 @@ export function Projects() {
 
                       {project.link && (
                         <Button className="button">
-                          <LinkIcon />
+                          <a href={project.link}>
+                            <LinkIcon />
+                          </a>
                         </Button>
                       )}
 
                       {project.github && (
                         <Button className="button">
-                          <Github />
+                          <a href={project.github}>
+                            <Github />
+                          </a>
                         </Button>
                       )}
                     </div>

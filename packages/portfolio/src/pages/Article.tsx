@@ -17,9 +17,8 @@ function Article() {
   const {setLoading} = useAppContext()
 
   useEffect(() => {
-    console.log('loading')
     setLoading(true)
-    fetch(`http://localhost:8000/project/${id}`)
+    fetch(`${process.env.REACT_APP_SERVER_URL}/project/${id}`)
       .then((res) => res.json())
       .then((data) => setState(data.project as IProject))
   }, [id])

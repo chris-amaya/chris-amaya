@@ -16,12 +16,12 @@ export function Header() {
   return (
     <header>
       <ul>
-        <li>
+        {/* <li>
           <Link to="/">{t('header.home')}</Link>
         </li>
         <li>
           <Link to="/blog">Blog</Link>
-        </li>
+        </li> */}
         <li>
           <div className="languages-container">
             <Translate />

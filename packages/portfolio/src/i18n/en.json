@@ -17,7 +17,7 @@
       "pre": "Since I’ve been studying, I can say I’ve done:",
       "list": {
         "i1": "<0>More than 30 small personal projects</0>: projects to enforce my knowledge while I was forming myself.",
-        "i2": "<0>1 personal project</0>: comport is a project that I hope some day soon will be consumed.",
+        "i2": "<0>1 personal project</0>: <2>comport</2> is a project that I hope some day soon will be consumed.",
         "i3": "<0>At least 3 big professional projects</0>: while I was working at Quickapps I help finishing 2 big projects and one more left it on standby."
       }
     },
@@ -37,7 +37,7 @@
     }
   },
   "projects": {
-    "useCase": "See more",
+    "useCase": "Use Case",
     "title": "Projects",
     "rock-paper": "A simple game that allows you to play Rock Paper Scissors. You can play with the computer or with another player. You can also play the variant of Rock Paper Scissors Lizard Spock.",
     "comport": "Camport is a personal project in which i will try to boost the alternatives of mexican farmer producers, so they do not depend of local buyers. \n\nI just finished the project because of this, still there are not real users.",

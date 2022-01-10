@@ -91,4 +91,16 @@
       margin: auto 0px;
     }
   }
+
+  blockquote {
+    background: getColor('rowTable');
+    border-left: 10px solid getColor('headerTable');
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: '\201C''\201D''\2018''\2019';
+  }
+
+  blockquote p {
+    display: inline;
+  }
 }

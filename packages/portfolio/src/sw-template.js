@@ -8,6 +8,11 @@ workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
 const {registerRoute} = workbox.routing
 const {CacheFirst, NetworkFirst, NetworkOnly} = workbox.strategies
 
+const URL_SERVER =
+  self.location.hostname === 'localhost'
+    ? 'http://localhost:8000'
+    : 'https://chrisamaya.com.mx'
+
 const cacheFirstNetwork = [
   'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400&family=Raleway:wght@300;400&display=swap',
   '/img/banner-crm.png',
@@ -18,11 +23,11 @@ const cacheFirstNetwork = [
   '/img/main-math.png',
   '/img/main-qr.png',
   '/img/main-rock.jpg',
-  'http://localhost:8000/projects',
-  'http://localhost:8000/project/swiss-payments',
-  'http://localhost:8000/project/math-fights',
-  'http://localhost:8000/project/zoho-crm',
-  'http://localhost:8000/project/rock-paper-scissors',
+  `${URL_SERVER}/projects}`,
+  `${URL_SERVER}project/swiss-payments`,
+  `${URL_SERVER}project/math-fights`,
+  `${URL_SERVER}project/zoho-crm`,
+  `${URL_SERVER}project/rock-paper-scissors`,
 ]
 
 registerRoute(({request, url}) => {
@@ -33,4 +38,4 @@ registerRoute(({request, url}) => {
   return false
 }, new CacheFirst())
 
-registerRoute(new RegExp('http://localhost:8000/projects'), new CacheFirst())
+registerRoute(new RegExp(`${URL_SERVER}/projects`), new CacheFirst())
