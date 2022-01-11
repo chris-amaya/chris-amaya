@@ -37,7 +37,6 @@ export function About() {
               </li>
             </ul>
             <p>{t('about.p3')}</p>
-            <p>{t('about.p4.pre')}</p>
             <ul>
               <li>
                 <Trans i18nKey={'about.p4.list.i1'}>
