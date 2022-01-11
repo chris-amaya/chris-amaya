@@ -5,8 +5,8 @@
   "author": "Christian Eduardo Amaya Rivas",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node lib/index.js",
-    "dev": "cross-env NODE_ENV=development & nodemon src/index.ts",
+    "start": "node lib/index.js",
+    "dev": "nodemon src/index.ts",
     "build": "tsc -d && yarn build:babel",
     "build:babel": "npx babel src --out-dir lib --extensions .ts,.tsx --source-maps inline"
   },

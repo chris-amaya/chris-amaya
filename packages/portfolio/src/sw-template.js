@@ -11,7 +11,7 @@ const {CacheFirst, NetworkFirst, NetworkOnly} = workbox.strategies
 const URL_SERVER =
   self.location.hostname === 'localhost'
     ? 'http://localhost:8000'
-    : 'https://chrisamaya.com.mx'
+    : 'https://chrisamaya.com.mx/api'
 
 const cacheFirstNetwork = [
   'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400&family=Raleway:wght@300;400&display=swap',
