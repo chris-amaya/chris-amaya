@@ -24,8 +24,10 @@ export function About() {
               <li>
                 <Trans i18nKey={'about.p2.list.i2'}>
                   <strong>1 personal project</strong>:
-                  <a href={'https://camport.chrisamaya.com.mx'}>Camport</a> is a
-                  project that I hope some day soon will be consumed.
+                  <a href={'https://pacific-meadow-71234.herokuapp.com/'}>
+                    Camport
+                  </a>{' '}
+                  is a project that I hope some day soon will be consumed.
                 </Trans>
               </li>
               <li>
