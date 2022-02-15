@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import {useParams} from 'react-router-dom'
 import {IProject} from '@personal/common'
 
+import projects from '../assets/projects.json'
 import {Header} from '../components'
 import {useTranslation} from 'react-i18next'
 import {useAppContext} from '../context/AppContext'
@@ -18,9 +19,7 @@ function Article() {
 
   useEffect(() => {
     setLoading(true)
-    fetch(`${process.env.REACT_APP_SERVER_URL}/project/${id}`)
-      .then((res) => res.json())
-      .then((data) => setState(data.project as IProject))
+    setState(projects.find((project) => project.name === id))
   }, [id])
 
   return (

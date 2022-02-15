@@ -1,29 +1,23 @@
-import {IProject} from '@personal/common'
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {useTranslation} from 'react-i18next'
 import {useNavigate} from 'react-router-dom'
+import {IProject} from '@personal/common'
 
 import {Button} from '.'
+import projects from '../assets/projects.json'
 import {Github, Link as LinkIcon} from '../assets'
 import {useAppContext} from '../context/AppContext'
 
 export function Projects() {
   const {t, i18n} = useTranslation()
   const navigate = useNavigate()
-  const [state, setState] = useState<IProject[]>()
+  const [state, setState] = useState<IProject[]>(projects)
 
   function handleNavigateProject(projectName: string) {
     navigate(`/project/${projectName}`)
   }
 
   const {setLoading} = useAppContext()
-
-  useEffect(() => {
-    setLoading(true)
-    fetch(`${process.env.REACT_APP_SERVER_URL}/projects`)
-      .then((res) => res.json())
-      .then((data) => setState(data.projects as IProject[]))
-  }, [])
 
   return (
     <section id="projects">
