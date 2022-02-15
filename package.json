@@ -29,7 +29,8 @@
     "portfolio:start": "yarn workspace @personal/portfolio start",
     "reset": "npx rimraf ./**/node_modules yarn.lock",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx)\" --write",
-    "dev": "lerna run dev --stream"
+    "dev": "lerna run dev --stream",
+    "build": "lerna run build --stream"
   },
   "resolutions": {
     "@types/jest": "^27.0.3"
