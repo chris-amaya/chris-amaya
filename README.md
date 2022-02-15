@@ -4,7 +4,7 @@
 
 
 
-| [<p align="center"><img  height="60" src="https://camo.githubusercontent.com/45249cad819498efba2eed709751f8e65100dca2c3420ea7f182003a5cbc3824/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f7064662e737667"/></p><p>Download my resume</p>](./packages/portfolio/public/Christian_Amaya-Developer.pdf) | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=buefy&hide_border=true" /></a> | [<p align="center">💼</p><p>Download my resume</p>](https://chris-amaya.vercel.app)
+| [<p align="center"><img  height="60" src="https://camo.githubusercontent.com/45249cad819498efba2eed709751f8e65100dca2c3420ea7f182003a5cbc3824/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f7064662e737667"/></p><p>Download my resume</p>](./packages/portfolio/public/Christian_Amaya-Developer.pdf) | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact&theme=buefy&hide_border=true" /></a> | [<p align="center">💼</p><p>Visit portfolio</p>](https://chris-amaya.vercel.app)
 | --- | --- | --- | 
 
 ## About me
