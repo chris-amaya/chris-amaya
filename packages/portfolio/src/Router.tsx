@@ -13,7 +13,7 @@ export function AppRouter() {
 
   return (
     <div className="App">
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />
           <Route path="project">
