@@ -26,7 +26,7 @@
     "backend:dev": "yarn workspace @personal/backend dev",
     "backend:build": "yarn workspace @personal/backend build",
     "backend:test": "yarn workspace @personal/backend test",
-    "portfolio:start": "yarn workspace @personal/portfolio start",
+    "portfolio:dev": "yarn workspace @personal/portfolio dev",
     "reset": "npx rimraf ./**/node_modules yarn.lock",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx)\" --write",
     "dev": "lerna run dev --stream",
