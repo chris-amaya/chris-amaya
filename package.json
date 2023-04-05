@@ -22,28 +22,39 @@
     ]
   },
   "scripts": {
+    "prepare": "install-peers -f",
     "backend:start": "yarn workspace @personal/backend start",
     "backend:dev": "yarn workspace @personal/backend dev",
     "backend:build": "yarn workspace @personal/backend build",
     "backend:test": "yarn workspace @personal/backend test",
     "portfolio:dev": "yarn workspace @personal/portfolio dev",
-    "reset": "npx rimraf ./**/node_modules yarn.lock",
+    "reset": "npx rimraf --glob **/node_modules yarn.lock",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|tsx)\" --write",
     "dev": "lerna run dev --stream",
     "build": "lerna run build --stream"
   },
   "resolutions": {
-    "@types/jest": "^27.0.3"
+    "@types/jest": "^29.5.0",
+    "typescript-tuple": "5.0.1"
   },
   "devDependencies": {
-    "lerna": "^4.0.0",
+    "install-peers-cli": "^2.2.0",
+    "lerna": "^6.6.1",
     "prettier": "^2.5.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.5.2"
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.3"
   },
   "dependencies": {
+    "@types/jest": "^29.5.0",
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
-    "eslint": "^8.5.0"
+    "eslint": "^8.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "styled-components": "^5.3.9"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   }
 }
